@@ -1,0 +1,6 @@
+var ouverture;
+function Enregistre() { window.document.getElementById(leLien).onclick=ouvrir; }
+function ouvrir() { window.document.getElementById(leLien).onclick=''; window.document.getElementById(NomDiv).style.clip="rect(auto, 0px, 0px, auto)"; window.document.getElementById(NomDiv).style.display='block'; ouverture = window.setInterval("aggrandissement()",VitesseOuverture);}
+function aggrandissement() { clipProp = (window.document.getElementById(NomDiv).style.clip).split(" "); pixel = "px"; if(!document.all)	pixel+=","; theRight = new Number(clipProp[1].replace(new RegExp(pixel), '')); theBottom = new Number(clipProp[2].replace(new RegExp(pixel), '')); if(theBottom<PropBottom) /* Script par SirJojO */ theBottom = theBottom+Incrementation; if(theRight<PropRight) /* Forums http://www.editeurjavascript.com/ */ theRight = theRight+Incrementation; else {	window.clearInterval(ouverture); window.document.getElementById(leLien).onclick=cacheBloc;} window.document.getElementById(NomDiv).style.clip="rect(auto, "+theRight+"px, "+theBottom+"px, auto)";}
+function cacheBloc() { window.document.getElementById(NomDiv).style.display='none'; window.document.getElementById(leLien).onclick=ouvrir;}
+window.onload=Enregistre;

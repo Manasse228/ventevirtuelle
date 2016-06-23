@@ -1,0 +1,41 @@
+#onglets{
+			display: none;
+		}
+                #premier{
+                    margin-left: 30px;
+                }
+		#onglets li{
+			position: relative;
+			float: left;
+			list-style: none;
+			padding: 2px 15px 15px;
+			margin-right: 5px;
+			border: 1px solid #1175AE;
+			cursor: pointer;
+			background-color: grey;
+			color: white;
+			z-index: 1;
+                        border-radius: 6px 6px 0 0 ;
+		}
+		#onglets .actif{
+			border-bottom: none;
+			font-weight: bold;
+			z-index: 10;
+                       
+		}
+		#contenu{
+			clear: both;
+			position: relative;
+                        
+			padding: 10px;
+			border: 1px solid #0D5995;
+			z-index: 5;
+			top: -6px;
+			background-color: white;
+			color: #0F67A1;
+			overflow: hidden;
+			border-radius: 1px;
+                           border-style: none;
+                           box-shadow: 0px 0px 1px black ;
+
+		}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>TODO supply a title</title>
+    </head>
+    <body>
+        <a href="#" id="chercher">Recherche</a>
+        <div id="DivCachee">
+
+	<form action="/scripts/search.php" onsubmit="return(detect_recherche(this))">
+		<TABLE CELLPADDING=0 CELLSPACING=0>
+			<TR><TD><B>Rechercher :</B><BR>
+		<INPUT TYPE="text" NAME="asked" STYLE="width:130" SIZE=20 VALUE="">
+		<SELECT NAME=dest>
+			<OPTION VALUE="1"> dans les scripts</OPTION>
+			<OPTION VALUE="2"> sur le site</OPTION>
+			<OPTION VALUE="3" > sur le web</OPTION>
+			<OPTION VALUE="4" SELECTED> sur le forum</OPTION>
+		</SELECT>
+		<INPUT TYPE="submit" VALUE="OK" onClick="this.value='...'">
+		</TD></TR></TABLE>
+	</form>
+
+</div>
+
+    </body>
+</html>
